@@ -1,0 +1,207 @@
+body{
+    font-family: sans-serif;
+    background-color: lightgray;
+}
+
+h1{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: white;
+}
+
+h2{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color:white;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background-color: #FB2B37;
+}
+
+header img{
+    height: 40px;
+    width: 40px;
+}
+
+a{
+    border: sold 1px black;
+    border-radius: 20px;
+    background-color: #FB2B37;
+    padding: 8px;
+}
+
+button{
+    border: solid 1px black;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #FB2B37;
+    color: white;
+    padding: 8px;
+}
+
+.loadButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+#searchInput{
+    border-radius: 20px;
+    width: 140px;
+}
+
+.over{
+    overflow-y: hidden;
+}
+
+.pokemonImg{
+    height: 160px;
+    width: 160px;
+}
+
+#pokeCardTop{
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    height: 360px;
+    width: 400px;
+    background-color: #FB6C6C;
+    color:white;
+    padding: 24px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.pokeCardBottom{
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 24px;
+    min-height: 100px;
+    height: 280px;
+    width: 400px;
+    margin-top: -70px;
+}
+
+.sprite{
+    margin-top: -124px;
+    width:200px;
+}
+
+.bigCardHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.backArrow{
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.heartEmpty{
+    height: 24px;
+    width: 24px;
+}
+
+.pokeColor{
+    height: 200px;
+    width: 200px;
+    max-width: 240px;
+    border-radius: 30px;
+    padding: 8px;
+    margin: 8px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.pokeColor img{
+    height: 120px;
+    width: 120px;
+}
+
+.pokeColor img:hover{
+    transition: all 0.5s ease-in-out;
+    height: 150px;
+    width: 150px;
+}
+
+.typeAndImg{
+    display: flex;
+}
+
+.miniCards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.big-card{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed; /* positioniert das element selber (parent-element) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex; /* positioniert die child elemente | wird nachher zu display flex */
+    justify-content: center;
+    align-items: center;
+}
+
+.next {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+
+.previous {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.d-none{
+    display: none;
+}
+
+#myBtn{
+    cursor: pointer;
+}
+
+@media (max-width: 410px){
+    header{
+        gap: 4px;
+    }
+    .headline{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 800px){
+    #pokeCardTop{
+        width: 264px;
+    }
+    .pokeCardBottom{
+        width: 264px;
+    }
+    .next {
+    top: 85%;
+    right: 30%;
+    height: 52px;
+    width: 52px;
+    }
+    .previous {
+    top: 85%;
+    height: 52px;
+    width: 52px;
+    left: 30%;
+    }
+}
